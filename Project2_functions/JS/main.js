@@ -7,8 +7,10 @@ function My_First_Function() {          //Defining a function and naming it
                                         //of result into HTML element with "Green_Text"id
 }
 
-function myFunction() {
-    var sentence = "I am learning";
-    document.getElementById("Concatenate").innerHTML = sentence;
+function myFunction() {                  //Defining a function and naming it
+    var sentence = "I am learning";      //Defining a variable and give it a value
+    sentence += " a lot from this book!";//Using the += operator to add on to the sentence
+    document.getElementById("Concatenate").innerHTML = sentence;//Putting the value
+                                         //of result into HTML element with "Concatenate"id
 }
 
