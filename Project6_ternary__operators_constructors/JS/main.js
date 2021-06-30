@@ -5,12 +5,6 @@ function Ride_Function() {  //Defining a function and naming it
     document.getElementById("Ride").innerHTML = Can_ride + " to ride. ";//Putting the value of result into HTML element with "Ride"id    
 }
 
-function Voter_Function() {  //Defining a function and naming it
-    var Age, Can_vote;   //Defining a variable (condition) ? Value_1:Value_2
-    Age = document.getElementById("Age").value;//Putting the value of result into HTML element with "Height"id
-    Can_vote = (Age < 18) ? "You are to young to vote":"You can vote";
-    document.getElementById("Ride").innerHTML = Can_vote + " to vote. ";//Putting the value of result into HTML element with "Ride"id    
-}
 
 // Constructor function for Vehicle objects
 function Vehicle(Make, Model, Year, Color) {
