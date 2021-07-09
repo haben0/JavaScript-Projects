@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function () { //(document) when the page is loaded run the function
+            $("html").append( //$(html)get the html tag and append the following information 
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic JQuery</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("#2").css({"color":"red"}) //Change Paragraph 2 color to red
+        $("#3").click(function () { // when Paragraph 3 is clicked call function to hide header
+            $('h1').hide();
+        });
+    })
+    </script>
+    
+</body>
+</html>
